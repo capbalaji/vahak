@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Tests(failed)">
+    <classes>
+      <class name="functionaltests.IMDBlogin">
+        <methods>
+          <include name="validLogin"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- functionaltests.IMDBlogin -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="Movies Tests(failed)">
+    <classes>
+      <class name="functionaltests.IMDB_Toprated_movies_check">
+        <methods>
+          <include name="moviesCheck"/>
+        </methods>
+      </class> <!-- functionaltests.IMDB_Toprated_movies_check -->
+    </classes>
+  </test> <!-- Movies Tests(failed) -->
+</suite> <!-- Failed suite [Functional] -->
